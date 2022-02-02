@@ -1,0 +1,60 @@
+/** @format */
+
+.card {
+  background: white;
+  width: 270px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: -5px 5px 10px #c7c6c6, 5px 5px 10px #c7c6c6;
+}
+.icons {
+  width: 270px;
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  justify-content: space-between;
+  z-index: 1;
+}
+.icons > i:last-child {
+  margin-left: 90%;
+}
+/* .icons > i:last-child {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  z-index: 1;
+} */
+.card:hover .icons {
+  display: flex;
+  justify-content: space-between;
+}
+/* .card:hover .CartIcon {
+  display: block;
+}
+.likeIcon:hover,
+.likeIcon:hover {
+  font-size: 25px;
+} */
+.productImg {
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+.productImg img {
+  width: 200px;
+  height: 300px;
+  margin: auto;
+}
+.title {
+  margin: 5px 0;
+  font-weight: 500;
+  color: gray;
+}

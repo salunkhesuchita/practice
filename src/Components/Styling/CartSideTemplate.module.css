@@ -1,0 +1,54 @@
+/** @format */
+
+.container {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #d8d5d5;
+}
+.container img {
+  width: 100px;
+  padding-right: 20px;
+}
+.title {
+  margin-left: 20px;
+}
+.title > div:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+}
+.title > div:last-child {
+  font-size: 25px;
+  font-weight: 500;
+}
+.title > button {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
+.title button {
+  text-transform: uppercase;
+  width: 150px;
+  padding: 15px;
+  border: none;
+  margin: 15px;
+  margin-left: 0;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+}
+
+.title > button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

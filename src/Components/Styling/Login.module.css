@@ -1,0 +1,64 @@
+/** @format */
+
+.myForm {
+  width: 30%;
+  padding: 50px;
+  box-shadow: 5px 5px 10px #cccbcb;
+  margin: 50px auto;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-weight: 500;
+}
+.myForm input {
+  width: 250px;
+  border: none;
+  border-bottom: 2px solid blue;
+  background-color: #eeeeee;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  font-weight: 600;
+}
+
+.myForm input[type="submit"] {
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+}
+.myForm input[type="submit"] {
+  text-transform: uppercase;
+  width: 150px;
+  padding: 15px;
+  border: none;
+  margin: 15px;
+  margin-left: 0;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+}
+
+.myForm input[type="submit"]:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  .myForm {
+    width: 80%;
+  }
+  .myForm input {
+    width: 70%;
+  }
+}

@@ -1,0 +1,104 @@
+/** @format */
+
+.container {
+  width: 85%;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+  box-shadow: -5px 5px 10px #c7c6c6, 5px 5px 10px #c7c6c6;
+  background: white;
+}
+.image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  width: 20%;
+  margin: 20px;
+  transition: 0.5s;
+  position: absolute;
+}
+.image img:hover {
+  width: 28%;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+.description {
+  width: 60%;
+  margin: 20px;
+  padding-left: 40px;
+  border-left: 1px solid #eeeeee;
+}
+.description h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.description > div:nth-child(2) {
+  color: green;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.description > div:nth-child(3) {
+  color: gray;
+}
+.buyNowBtn {
+  margin: 40px 0;
+}
+.buyNowBtn > button:first-child {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+}
+.buyNowBtn > button:last-child {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
+.buyNowBtn button {
+  text-transform: uppercase;
+  width: 200px;
+  padding: 15px;
+  border: none;
+  margin: 15px;
+  margin-left: 0;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+}
+
+.buyNowBtn > button:first-child:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.buyNowBtn > button:last-child:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  .container {
+    flex-direction: column;
+  }
+  .image {
+    width: 70%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+/** @format */
+
+.status {
+  width: fit-content;
+  margin: 20px auto;
+}
+.banner {
+  background: #808183;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+/* .banner > img:first-child {
+  width: 45%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 25%;
+  box-shadow: -5px -5px 10px #a00101, 5px 5px 10px #570000;
+} */
+.banner img {
+  width: 100%;
+  /* padding: 40px; */
+  /* box-shadow: -5px -5px 10px #dddbdb, 5px 5px 10px #424242; */
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trinding {
+  text-align: center;
+  color: #2e2e2e;
+}

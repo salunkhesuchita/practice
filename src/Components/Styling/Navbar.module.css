@@ -1,0 +1,251 @@
+/** @format */
+
+.Navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80px;
+  box-shadow: 3px 3px 5px gray;
+  background: #263238;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamBurger {
+  display: none;
+}
+.logo {
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.category {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 5px;
+  padding: 25px 10px;
+}
+
+.category:hover {
+  color: #7272f7;
+}
+.category i {
+  color: aliceblue;
+  margin: 5px;
+}
+.category:hover i {
+  transform: rotate(-90deg);
+}
+.navbarRight {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.login {
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px;
+}
+.login i {
+  color: aliceblue;
+  font-size: 25px;
+}
+.login:hover {
+  color: #7070f3;
+}
+.item {
+  display: none;
+  width: fit-content;
+  height: 20px;
+  margin-left: -13%;
+  margin: auto;
+  padding: 40px;
+  margin-top: 25px;
+  position: absolute;
+  z-index: 999;
+  background: #263238;
+  color: aliceblue;
+  text-align: center;
+  border-top: 1px solid gray;
+}
+.category:hover .item {
+  display: flex;
+  justify-content: center;
+}
+.item__category {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0 20px;
+  border-left: 1px solid gray;
+}
+
+.item__category:first-child {
+  border: none;
+}
+.item__category:hover {
+  color: #7272f7;
+}
+.user {
+  text-decoration: none;
+  color: aliceblue;
+  margin-right: 10px;
+  display: flex;
+  padding: 25px 10px;
+}
+.user i {
+  font-size: 40px;
+  margin: 0 10px;
+}
+.user_item {
+  display: none;
+  width: fit-content;
+
+  margin: auto;
+  padding: 20px;
+  margin-top: 65px;
+  margin-left: -5%;
+  position: absolute;
+  z-index: 999;
+  background: #263238;
+  color: aliceblue;
+  text-align: center;
+  border-top: 1px solid gray;
+}
+.user:hover .user_item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.user_item_details {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px 20px;
+  border-bottom: 1px solid gray;
+}
+.user_item_details:hover {
+  color: #7272f7;
+}
+.signout {
+  background-image: linear-gradient(
+    to right,
+    #085078 0%,
+    #85d8ce 51%,
+    #085078 100%
+  );
+}
+.signout {
+  text-transform: uppercase;
+  width: 85%;
+  padding: 10px;
+  border: none;
+  margin: 15px;
+  margin-left: 0;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: 0.5s;
+  box-shadow: 0 0 5px #1b1a2b;
+  cursor: pointer;
+}
+
+.signout:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  .midNavbar {
+    display: none;
+  }
+  .hamBurger {
+    display: flex;
+    width: 0px;
+    padding: 0;
+  }
+  .logo {
+    margin-left: 60px;
+    margin-right: 5px;
+  }
+  .hamBurger div {
+  }
+  .hamburger_icon i {
+    font-size: 30px;
+    color: aliceblue;
+    margin: 20px;
+    z-index: 10;
+    position: relative;
+  }
+  .show {
+    width: 45%;
+    min-width: 250px;
+    transition: 0.5s;
+    background-color: #263238;
+    z-index: 1000;
+    position: absolute;
+    box-shadow: 5px 5px 10px #646464, -5px -5px 10px #202020;
+  }
+  .hide {
+    width: 0;
+    transition: 0.5s;
+    z-index: 1000;
+    position: absolute;
+  }
+  .showMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .hideMenu {
+    display: none;
+  }
+  .leftArrow {
+    float: right;
+    clear: both;
+    padding: 20px;
+    font-size: 30px;
+    color: aliceblue;
+  }
+
+  .item {
+    display: none;
+    min-width: 200px;
+    margin-left: 13%;
+    height: fit-content;
+    margin: auto;
+    padding: 60px 30px;
+    margin-top: -40px;
+    position: absolute;
+    z-index: 1005;
+    background: #263238;
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 5px 5px 10px #302f2f, -5px -5px 10px #202020;
+  }
+  .category:hover .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 60%;
+  }
+  .item__category {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px 20px;
+    border-left: none;
+    border-bottom: 1px solid gray;
+  }
+  .item__category:first-child {
+    border-bottom: 1px solid gray;
+  }
+  .category:hover i {
+    transform: rotate(-180deg);
+  }
+  .category i {
+    transform: rotate(-90deg);
+  }
+}
